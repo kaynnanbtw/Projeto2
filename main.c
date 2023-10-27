@@ -10,6 +10,7 @@ typedef struct {
     int memory[MEMORY_SIZE];
 } State;
 
+// Inicializa o estado da máquina, definindo todos os registradores e a memória como zero
 void initializeState(State *state) {
     for (int i = 0; i < REGISTER_COUNT; i++) {
         state->registers[i] = 0;
@@ -24,12 +25,13 @@ int main() {
     initializeState(&state);
 
     int N;
-    scanf("%d", &N);
+    scanf("%d", &N); // Lê o número de linhas do programa
     char instruction[20];
     int rx, ry, rz, address, value;
 
+    // Loop para processar cada instrução do programa
     for (int i = 0; i < N; i++) {
-        scanf("%s", instruction);
+        scanf("%s", instruction); // Lê a instrução atual
         if (strcmp(instruction, "EXIT") == 0) {
             break;
         } else if (strcmp(instruction, "MOV") == 0) {
