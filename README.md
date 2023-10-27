@@ -33,6 +33,6 @@ Para executar o programa compilado, use o seguinte comando:
 
 Substitua `nome_do_executavel` pelo nome que deseja dar ao executável e `nome_do_arquivo` pelo nome real do arquivo fonte em C.
 
-Certifique-se de fornecer a entrada do programa conforme as instruções especificadas para garantir que o programa funcione corretamente.
+**Certifique-se de fornecer a entrada do programa conforme as instruções especificadas para garantir que o programa funcione corretamente.**
 
-Este interpretador de linguagem assembly foi desenvolvido como parte de um projeto de programação em C.
+>Este interpretador de linguagem assembly foi desenvolvido como parte de um projeto de programação em C.
